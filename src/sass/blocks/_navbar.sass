@@ -22,15 +22,25 @@
     display: inline-block
     color: $text-color
     font-size: 20px
-    font-weight: 700
     text-decoration: none
     margin-top: 10px
-@media ( max-width: 768px)
+    +bold
+@media (max-width: 768px)
   .navbar
     &__contacts
       display: none
     &__button
       font-size: 12px
-      padding: 15px 26px
+      padding: 15px 25px
     &__logo
       width: 90px
+@media (max-width: 320px)
+  .navbar
+    &__logo
+      border: 91px 44px
+    &__button
+      width: 137px
+      height: 39px
+      border-radius: 5px
+      font-size: 10px
+      font-weight: 700
