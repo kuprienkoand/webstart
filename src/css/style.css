@@ -339,6 +339,7 @@ img {
 .offer__input {
   margin-bottom: 34px;
   width: 240px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -348,6 +349,7 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  outline: none;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -412,7 +414,7 @@ img {
   .offer {
     background: #fff;
     padding-top: 53px;
-    padding-bottom: 56px;
+    padding-bottom: 34px;
   }
   .offer-block {
     width: 100%;
