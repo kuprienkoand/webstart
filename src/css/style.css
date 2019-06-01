@@ -48,12 +48,6 @@ img {
   }
 }
 
-@media (max-width: 320px) {
-  .container {
-    width: 90%;
-  }
-}
-
 .button {
   border-radius: 10px;
   background-color: #ffd200;
@@ -129,6 +123,8 @@ img {
 }
 
 .navbar__button {
+  width: 170px;
+  height: 49px;
   font-size: 13px;
   padding: 15px 26px;
   margin-left: 30px;
@@ -152,20 +148,7 @@ img {
     display: none;
   }
   .navbar__button {
-    font-size: 12px;
     padding: 15px 25px;
-  }
-  .navbar__logo {
-    width: 90px;
-  }
-}
-
-@media (max-width: 320px) {
-  .navbar__logo {
-    border: 91px 44px;
-    margin-left: -4px;
-  }
-  .navbar__button {
     width: 137px;
     height: 39px;
     border-radius: 5px;
@@ -173,6 +156,10 @@ img {
     margin-right: 14px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
+  }
+  .navbar__logo {
+    margin-left: -4px;
+    max-width: 91px;
   }
 }
 
@@ -254,7 +241,11 @@ img {
   font-weight: 300;
 }
 
-.hero-image__plan {
+.hero-image {
+  margin-left: 15px;
+}
+
+.shadowhero {
   -webkit-box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
           box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
 }
@@ -275,29 +266,9 @@ img {
 }
 
 @media (max-width: 768px) {
-  .hero-text__title {
-    font-size: 24px;
-    line-height: 1.4;
-    margin-bottom: 15px;
-  }
-  .hero-text__subtitle {
-    font-size: 16px;
-    margin-bottom: 28px;
-  }
-  .hero-list__item {
-    margin-bottom: 20px;
-  }
-  .hero-list__text {
-    font-size: 12px;
-  }
-  .hero-list__image {
-    margin-right: 15px;
-  }
-}
-
-@media (max-width: 320px) {
   .hero {
-    padding: 33px 0;
+    padding-top: 30px;
+    padding-bottom: 52px;
   }
   .hero-text__title {
     line-height: 1.2;
@@ -307,24 +278,30 @@ img {
     font-weight: 700;
   }
   .hero-text__subtitle {
+    font-size: 16px;
     margin-bottom: 27px;
   }
   .hero-list__item {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
   }
   .hero-list__text {
     font-size: 12px;
     line-height: 16px;
     max-width: 199px;
   }
-  .hero-image__plan {
+  .hero-list__image {
+    margin-right: 15px;
+  }
+  .hero-image {
     margin-top: -10px;
-    margin-right: 21px;
+    position: relative;
+    right: 19px;
   }
 }
 
 /* стили для блока offer */
 .offer {
+  padding: 84px 0;
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
   background-size: contain;
@@ -345,21 +322,22 @@ img {
   width: 50%;
   padding-right: 91px;
   position: relative;
+  margin-top: -26px;
 }
 
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .offer__subtitle {
-  max-width: 231px;
-  margin-bottom: 30px;
+  max-width: 232px;
+  margin-bottom: 32px;
 }
 
 .offer__input {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   width: 240px;
 }
 
@@ -370,6 +348,36 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer-subblock {
+  padding: 27px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__info {
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 225px;
+  margin-right: 69px;
+}
+
+.offer__subinfo {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.offer__phone {
+  font-size: 15px;
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -383,15 +391,58 @@ img {
   .offer__button {
     font-size: 14px;
   }
+  .offer-subblock {
+    padding: 21px 0;
+    margin-left: 7px;
+    display: inline-block;
+  }
+  .offer__info {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    width: 225px;
+    margin-bottom: 10px;
+  }
+  .offer__subinfo {
+    margin-bottom: 7px;
+  }
 }
 
 @media (max-width: 768px) {
   .offer {
     background: #fff;
+    padding-top: 53px;
+    padding-bottom: 56px;
   }
   .offer-block {
     width: 100%;
+    margin-left: -4px;
     padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 22px;
+    width: 260px;
+    margin: 18px 0 17px;
+  }
+  .offer__subtitle {
+    width: 203px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+  .offer__input {
+    max-width: 275px;
+    margin-bottom: 10px;
+    height: 65px;
+  }
+  .offer__button {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 275px;
+    padding: 16px 62px;
+    margin-top: -1px;
+    margin-left: 2px;
   }
 }
 /*# sourceMappingURL=style.css.map */

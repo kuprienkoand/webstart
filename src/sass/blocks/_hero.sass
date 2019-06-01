@@ -40,8 +40,9 @@
       line-height: 24px
       +reg
   &-image
-    &__plan
-      box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+    margin-left: 15px
+.shadowhero
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
 @media (max-width: 1200px)
   .hero
     &-block
@@ -52,24 +53,8 @@
       padding-right: 10px
 @media (max-width: 768px)
   .hero
-    &-text
-      &__title
-        font-size: 24px
-        line-height: 1.4
-        margin-bottom: 15px
-      &__subtitle
-        font-size: 16px
-        margin-bottom: 28px
-    &-list
-      &__item
-        margin-bottom: 20px
-      &__text
-        font-size: 12px
-      &__image
-        margin-right: 15px
-@media (max-width: 320px)
-  .hero
-    padding: 33px 0
+    padding-top: 30px
+    padding-bottom: 52px
     &-text
       &__title
         line-height: 1.2
@@ -77,15 +62,18 @@
         margin-bottom: 9px
         +bold
       &__subtitle
+        font-size: 16px
         margin-bottom: 27px
     &-list
       &__item
-        margin-bottom: 15px
+        margin-bottom: 22px
       &__text
         font-size: 12px
         line-height: 16px
         max-width: 199px
+      &__image
+        margin-right: 15px
     &-image
-      &__plan
-        margin-top: -10px
-        margin-right: 21px
+      margin-top: -10px
+      position: relative
+      right: 19px
