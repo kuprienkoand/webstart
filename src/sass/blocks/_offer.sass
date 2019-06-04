@@ -16,11 +16,11 @@
     width: 50%
     padding-right: 91px
     position: relative
-    margin-top: -26px
   &__title
     max-width: 360px
     line-height: 35px
     margin-bottom: 20px
+    text-align: left
   &__subtitle
     max-width: 232px
     margin-bottom: 32px
@@ -30,6 +30,8 @@
     outline: none
     &:first-child
       margin-right: 10px
+    &:focus
+      border: 2px solid $main-color
   &__button
     width: 100%
     min-height: 70px
@@ -61,8 +63,7 @@
     &__button
       font-size: 14px
     &-subblock
-      padding: 21px 0
-      margin-left: 7px
+      padding: 21px 0 0
       display: inline-block
     &__info
       display: block
@@ -75,17 +76,15 @@
 @media (max-width: 768px)
   .offer
     background: #fff
-    padding-top: 53px
-    padding-bottom: 34px
+    padding: 48px 0
     &-block
       width: 100%
-      margin-left: -4px
       padding-right: 0
     &__title
       font-size: 18px
       line-height: 22px
       width: 260px
-      margin: 18px 0 17px
+      margin-bottom: 17px
     &__subtitle
       width: 203px
       font-size: 14px
@@ -100,5 +99,3 @@
       line-height: 18px
       max-width: 275px
       padding: 16px 62px
-      margin-top: -1px
-      margin-left: 2px

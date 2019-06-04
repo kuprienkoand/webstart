@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -85,7 +86,7 @@
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="" class="form offer__form">
+          <form action="#" class="form offer__form">
             <input type="text" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" class="input offer__input" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
@@ -102,18 +103,83 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+
+    <section class="section portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+
+        <div class="slider">
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+          <!-- /.slider__item -->
+        </div>
+        <div class="arrows portfolio__arrows">
+          <div class="arrows__left">
+            <img src="img/portfolio/left-arrow.png" alt="">
+          </div>
+          <div class="arrows__right">
+            <img src="img/portfolio/right-arrow.png" alt="">
+          </div>
+        </div>
+        <!-- /.slider -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
   </main>
   
   <div class="modal" id="modal">
     <div class="modal-dialog">
-      <button class="modal-dialog__close" id="close">&times</button>
+      <button class="modal-dialog__close" id="close">&times;</button>
       <h4 class="modal-dialog__title">Всплывающее окно</h4>
     </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal -->
 
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 
 </body>
 </html>
