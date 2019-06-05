@@ -492,6 +492,7 @@ h1, h2 {
 
 .slick-slide {
   margin-right: 30px;
+  outline: none;
 }
 
 @media (max-width: 1200px) {
