@@ -439,7 +439,7 @@ h1, h2 {
     font-size: 18px;
     line-height: 22px;
     width: 260px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
   .offer__subtitle {
     width: 203px;
@@ -633,6 +633,9 @@ h1, h2 {
 }
 
 @media (max-width: 768px) {
+  .price {
+    padding-bottom: 10px;
+  }
   .price__title {
     font-size: 18px;
     max-width: 252px;
@@ -655,6 +658,129 @@ h1, h2 {
   .card__title {
     font-size: 14px;
     margin-bottom: 12px;
+  }
+}
+
+/* сили для блока 5 шагов до ремонта */
+.section__steps {
+  padding-top: 50px;
+}
+
+.step {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  position: relative;
+}
+
+.step:after {
+  content: '';
+  width: 72px;
+  height: 25px;
+  position: absolute;
+  background: url("../img/steps/arrow.png") no-repeat center;
+  top: -10px;
+  right: -15%;
+}
+
+.step:last-child:after {
+  display: none;
+}
+
+.step__image {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.step__text {
+  font-size: 14px;
+  max-width: 152px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.steps__title {
+  margin: auto;
+  margin-bottom: 51px;
+  font-size: 30px;
+  line-height: 45px;
+  max-width: 660px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.steps__subtitle {
+  text-align: center;
+  margin-bottom: 69px;
+  font-size: 20px;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .step {
+    margin-bottom: 30px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .step:after {
+    display: none;
+  }
+  .steps-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__steps {
+    padding: 10px 0 32px;
+  }
+  .step:after {
+    display: none;
+  }
+  .step__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .step__image {
+    margin-bottom: 21px;
+  }
+  .steps__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
