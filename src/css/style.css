@@ -497,7 +497,7 @@ h1, h2 {
 
 @media (max-width: 1200px) {
   .portfolio {
-    padding: 40px 0;
+    padding: 40px 0 50px;
   }
   .portfolio__arrows {
     margin-top: 46px;
@@ -632,16 +632,16 @@ h1, h2 {
 
 @media (max-width: 1200px) {
   .price {
-    padding: 66px 0 55px;
+    padding: 60px 0 55px;
   }
   .card:nth-child(4) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .price {
-    padding-bottom: 50px;
+    padding-bottom: 55px;
   }
   .price__title {
     font-size: 18px;
@@ -652,7 +652,7 @@ h1, h2 {
   .price__subtitle {
     font-size: 14px;
     line-height: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   .price__card {
     max-width: 273px;
@@ -665,6 +665,9 @@ h1, h2 {
   .card__title {
     font-size: 14px;
     margin-bottom: 12px;
+  }
+  .card:nth-child(5) {
+    margin-bottom: 30px;
   }
   .card:last-child {
     margin-bottom: 0;
@@ -765,7 +768,7 @@ h1, h2 {
 
 @media (max-width: 768px) {
   .section__steps {
-    padding: 10px 0 75px;
+    padding: 0 0 50px;
   }
   .step:after {
     display: none;
