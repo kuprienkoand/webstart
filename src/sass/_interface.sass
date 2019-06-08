@@ -5,7 +5,7 @@ body
   color: $text-color
 img
   max-width: 100%
-h1, h2
+h1, h2, h3
   margin: 0
 .container 
   width: 1170px
@@ -17,6 +17,9 @@ h1, h2
   .container
     max-width: 580px
     width: 90%
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
 
 .button
   border-radius: 10px
@@ -41,7 +44,11 @@ h1, h2
   padding: 20px 26px
   font-size: 15px
   border-radius: 10px
+  +reg
 .arrows
   &__left, &__right
     &:hover
       cursor: pointer
+.error
+  border: 1px dotted red
+  margin-top: 15px
