@@ -877,7 +877,6 @@ h1, h2, h3 {
 
 .interview {
   padding-right: 68px;
-  margin-top: 12px;
 }
 
 .interview__title {
@@ -927,10 +926,6 @@ h1, h2, h3 {
   max-width: 400px;
   font-size: 18px;
   line-height: 28px;
-}
-
-.form {
-  margin-top: 9px;
 }
 
 .form__title {
@@ -987,7 +982,7 @@ h1, h2, h3 {
 
 @media (max-width: 768px) {
   .brif {
-    padding: 30px 6px 35px;
+    padding: 30px 0 35px;
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 47%, cover;
