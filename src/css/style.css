@@ -1172,11 +1172,18 @@ h1, h2, h3 {
   min-width: 200px;
   background-color: #fff;
   padding: 40px;
+  text-align: center;
+  border-radius: 75%;
 }
 
 .modal-dialog__close {
   position: absolute;
   top: 0;
   right: 0;
+  background: yellow;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
